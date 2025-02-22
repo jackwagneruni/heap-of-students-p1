@@ -8,7 +8,7 @@ private:
     int month, day, year;
 
 public:
-    Date();  // Default constructor
+    Date();
     void init(const std::string& dateStr);
     void printDate() const;
 };

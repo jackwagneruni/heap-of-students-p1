@@ -17,16 +17,16 @@ void Student::init(const std::string& studentStr) {
     std::getline(ss, city, ',');
     std::getline(ss, state, ',');
     std::getline(ss, zip, ',');
-    address.init(street, city, state, zip);  // Pass the split components to Address::init
+    address.init(street, city, state, zip);
 
-    // Parsing dates
+    // dates
     std::string birthDateStr, gradDateStr;
     std::getline(ss, birthDateStr, ',');
     std::getline(ss, gradDateStr, ',');
-    birthDate.init(birthDateStr);  // Initialize birth date
-    gradDate.init(gradDateStr);    // Initialize graduation date
+    birthDate.init(birthDateStr);
+    gradDate.init(gradDateStr);
 
-    // Parsing credit hours
+    // credit hours
     ss >> creditHours;
 }
 
